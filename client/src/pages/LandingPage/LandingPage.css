@@ -2,20 +2,20 @@
     min-height: 93vh;
     display: flex;
     align-items: center;
-    background-image: url("https://www.guidingtech.com/wp-content/uploads/Google-keep-drawing-not-working-fi_4d470f76dc99e18ad75087b1b8410ea9.jpg");
+    background-image: url("https://wallpapercave.com/wp/wp2430591.jpg");
     background-position: center;
     background-size: cover;
 }
 
 .title{
     font-size: 95px;
-    color: white;
+    color: black;
 }
 
 .subtitle{
     font-size: 25px;
     padding-top: 10px;
-    color: white;
+    color: rgb(9, 9, 0);
 }
 
 .intro-text{

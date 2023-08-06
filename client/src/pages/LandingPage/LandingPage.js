@@ -3,12 +3,22 @@ import Row from 'react-bootstrap/esm/Row';
 import Container from 'react-bootstrap/esm/Container'
 import Button from 'react-bootstrap/esm/Button';
 import './LandingPage.css';
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const LandingPage = () => {
+    const navigate = useNavigate();
+    useEffect(() => {
+        const userInfo = localStorage.getItem("userInfo");
+        if(userInfo){
+            navigate("/myNotes");
+        }
+    }, [navigate]);
   return (
     <div className='main'>
         <Container>
-            <Row style={{marginBottom:"50%"}}>
+            {/* style={{marginBottom:"10%"}} */}
+            <Row style={{marginBottom:"45%"}}>
                 <div className='intro-text'>
                     <div>
                         <h1 className='title'>Welcome To Keeper!</h1>
