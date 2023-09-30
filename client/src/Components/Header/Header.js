@@ -9,7 +9,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { logout } from '../../actions/userActions';
-import logoImage from './KEEPER.png';
+import logoImage from './NP.png';
 
 
 const Header = ({setSearch}) => {
@@ -24,7 +24,7 @@ const Header = ({setSearch}) => {
     }
 
     return (
-        <Navbar expand="lg" className="bg-body-tertiary" variant='dark' bg='primary'>
+        <Navbar expand="lg" className="bg-body-tertiary" variant='dark' bg='dark'>
             <Container fluid>
                 <Navbar.Brand>
                     <Link to='/' style={{color:"white",marginLeft:"50px"}}>
@@ -67,7 +67,7 @@ const Header = ({setSearch}) => {
                         {/* <Nav.Link>
                             <Link to='/login' style={{color:'white',marginRight:"50px"}}>LOGIN</Link>
                         </Nav.Link> */}
-                        <h5 style={{color:'white'}}>{Date().substring(0,25)}</h5>
+                        <Button className='btn btn-outline-warning' variant='outline-primary' style={{color:'white',fontFamily:'Courier New',fontWeight:'bold'}}>{Date().substring(0,25)}</Button>
                     </Nav>)}
 
                 </Navbar.Collapse>

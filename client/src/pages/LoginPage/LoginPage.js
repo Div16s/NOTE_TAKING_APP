@@ -86,7 +86,7 @@ const LoginPage = () => {
                         />
                     </Form.Group>
             
-                    <Button variant="primary" type="submit">
+                    <Button type="submit">
                         Submit
                     </Button>
                 </Form>

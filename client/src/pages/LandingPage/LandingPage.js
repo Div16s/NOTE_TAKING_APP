@@ -21,17 +21,18 @@ const LandingPage = () => {
             <Row style={{marginBottom:"45%"}}>
                 <div className='intro-text'>
                     <div>
-                        <h1 className='title'>Welcome To Keeper!</h1>
-                        <p className='subtitle'>One safe place to keep all your notes.</p>
+                        <h1 className='title'>Welcome To NOTESPHERE!</h1>
+                        <h2 className='subtitle'>Your Universe of Infinite Possibilities in Note-Taking!</h2>
+                        <p className='description'>Unleash your creativity, boost your productivity, and capture every brilliant idea effortlessly with NoteSphere.</p>
                     </div>
                     <div className='buttonContainer'>
                         <a href='/login'>
-                            <Button size='lg' className='landingButton'>
+                            <Button size='lg' className='landingButton btn btn-light'>
                                 Login
                             </Button>
                         </a>
                         <a href='/register'>
-                            <Button size='lg' className='landingButton' variant='outline-primary'>
+                            <Button size='lg' className='landingButton btn btn-outline-light' variant='outline-primary'>
                                 Signup
                             </Button>
                         </a>

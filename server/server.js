@@ -29,6 +29,12 @@ app.get('/', (req,res)=>{
 app.use('/user', userRoutes);
 app.use('/notes',noteRoutes);
 
+
+app.get('/notes/:id',(req,res)=>{
+    const note = notes.find((n)=> n._id === req.params.id)
+    res.send(note);
+})
+
 // ----------------DEPLOYMENT---------------------
 
 const __dirname1 = path.resolve();
@@ -47,31 +53,6 @@ else{
 }
 
 // ----------------DEPLOYMENT---------------------
-
-
-app.get('/notes/:id',(req,res)=>{
-    const note = notes.find((n)=> n._id === req.params.id)
-    res.send(note);
-})
-
-// // ----------------DEPLOYMENT---------------------
-
-// const __dirname1 = path.resolve();
-
-// if(process.env.NODE_ENV==="production"){
-//     app.use(express.static(path.join(__dirname1,"/client/build")));
-
-//     app.get('*',(req,res)=>{
-//         res.sendFile(path.resolve(__dirname1,"client","build","index.html"));
-//     });
-// }
-// else{
-//     app.get('/', (req,res)=>{
-//         res.send("Backend working fine!");
-//     })
-// }
-
-// // ----------------DEPLOYMENT---------------------
 
 DBConnection();
 

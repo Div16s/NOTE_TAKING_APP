@@ -73,7 +73,7 @@ const MyNotes = ({search}) => {
     return (
         <MainScreen title={`Welcome back ${userInfo.name}....`}>
             <Link to='createNote'>
-                <Button style={{ marginLeft: 10, marginBottom: 6 }} size='lg'>
+                <Button style={{ marginLeft: 10, marginBottom: 6 }} className='btn btn-dark' size='lg'>
                     Create New Note
                 </Button>
             </Link>
@@ -95,7 +95,7 @@ const MyNotes = ({search}) => {
 
                                     </span>
                                     <div>
-                                        <Button href={`/note/${note._id}`}>Edit</Button>
+                                        <Button className='btn btn-dark'  href={`/note/${note._id}`}>Edit</Button>
                                         <Button variant='danger' className='mx-2' onClick={() => deleteHandler(note._id)}>Delete</Button>
                                     </div>
                                 </Card.Header>
