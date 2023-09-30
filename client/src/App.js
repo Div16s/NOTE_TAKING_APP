@@ -19,6 +19,7 @@ function App() {
       <Header setSearch={setSearch} />
       <main>
         <Routes>
+<<<<<<< HEAD
           {/* <Route path='/' Component={LandingPage}></Route>
           <Route path='/login' Component={LoginPage}></Route>
           <Route path='/register' Component={RegisterPage}></Route>
@@ -27,6 +28,8 @@ function App() {
           <Route path='/note/:id' Component={SingleNote}></Route>
           <Route path='/myNotes' Component={() => <MyNotes search={search}/>}></Route> */}
 
+=======
+>>>>>>> 4eeb813fec41633a22a740693235b9c8747c7a06
           <Route index element={<LandingPage />}></Route>
           <Route path='/login' element={<LoginPage />}></Route>
           <Route path='/register' element={<RegisterPage />}></Route>
