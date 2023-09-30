@@ -19,13 +19,21 @@ function App() {
       <Header setSearch={setSearch} />
       <main>
         <Routes>
-          <Route path='/' Component={LandingPage}></Route>
+          {/* <Route path='/' Component={LandingPage}></Route>
           <Route path='/login' Component={LoginPage}></Route>
           <Route path='/register' Component={RegisterPage}></Route>
           <Route path='/profile' Component={ProfilePage}></Route>
           <Route path='/myNotes/createNote' Component={CreateNote}></Route>
           <Route path='/note/:id' Component={SingleNote}></Route>
-          <Route path='/myNotes' Component={() => <MyNotes search={search}/>}></Route>
+          <Route path='/myNotes' Component={() => <MyNotes search={search}/>}></Route> */}
+
+          <Route index element={<LandingPage />}></Route>
+          <Route path='/login' element={<LoginPage />}></Route>
+          <Route path='/register' element={<RegisterPage />}></Route>
+          <Route path='/profile' element={<ProfilePage />}></Route>
+          <Route path='/myNotes/createNote' element={<CreateNote />}></Route>
+          <Route path='/note/:id' element={<SingleNote />}></Route>
+          <Route path='/myNotes' element={<MyNotes search={search}/>}></Route>
         </Routes>
       </main>
       <Footer />

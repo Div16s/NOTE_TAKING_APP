@@ -134,14 +134,14 @@ const ProfilePage = () => {
                                 />
                             </Form.Group>
 
-                            <Button variant="primary" type="submit">
+                            <Button variant="primary" className='btn btn-dark' type="submit">
                                 Update
                             </Button>
                         </Form>
                     </Col>
 
                     <Col md={6} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                        <img src={pic} alt={name} className='profilePic'></img>
+                        <img src={pic} alt={name} className='profilePic' ></img>
                     </Col>
                 </Row>
             </div>

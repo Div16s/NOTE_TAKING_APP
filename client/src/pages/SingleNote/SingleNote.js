@@ -36,7 +36,7 @@ const SingleNote = () => {
 
     useEffect(() => {
         const fetching = async () => {
-            const { data } = await axios.get(`http://localhost:8000/notes/${id}`);
+            const { data } = await axios.get(`http://localhost:5000/notes/${id}`);
             console.log(id);
             setTitle(data.title);
             setContent(data.content);
@@ -115,7 +115,7 @@ const SingleNote = () => {
                         </Form.Group>
 
                         {loading && <Loading size={50} />}
-                        <Button type='submit' variant='primary'>
+                        <Button type='submit' className='btn btn-dark' variant='primary'>
                             Update Note
                         </Button>
                         <Button className='mx-2' variant='danger' onClick={() => deleteHandler(id)}>

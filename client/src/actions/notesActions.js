@@ -16,7 +16,7 @@ export const listNotes = () => async (dispatch, getState) => {
             },
         };
 
-        const {data} = await axios.get('http://localhost:8000/notes',config);
+        const {data} = await axios.get('http://localhost:5000/notes',config);
         dispatch({
             type:NOTE_LIST_SUCCESS,
             payload: data,
@@ -51,7 +51,7 @@ export const createNoteAction = (title,content,category) => async (dispatch, get
         };
 
         const {data} = await axios.post(
-            'http://localhost:8000/notes/create',
+            'http://localhost:5000/notes/create',
             {title,content,category},
             config
         );
@@ -90,7 +90,7 @@ export const updateNoteAction = (id,title,content,category) => async (dispatch, 
         };
 
         const {data} = await axios.put(
-            `http://localhost:8000/notes/${id}`,
+            `http://localhost:5000/notes/${id}`,
             {title,content,category},
             config,
         );
@@ -129,7 +129,7 @@ export const deleteNoteAction = (id) => async (dispatch, getState) => {
         };
 
         const {data} = await axios.delete(
-            `http://localhost:8000/notes/${id}`,
+            `http://localhost:5000/notes/${id}`,
             config
         );
 

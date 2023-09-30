@@ -20,8 +20,10 @@ const initialState = {
     userLogin: {userInfo: userInfoFromStorage},
 };
 
+//creating middleware
 const middleware = [thunk];
 
+//creating store // (...)->spread operator
 export const store = createStore(
     reducer,
     initialState,

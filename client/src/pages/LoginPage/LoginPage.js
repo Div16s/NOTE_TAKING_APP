@@ -86,7 +86,7 @@ const LoginPage = () => {
                         />
                     </Form.Group>
             
-                    <Button type="submit">
+                    <Button type="submit" className='btn btn-dark'>
                         Submit
                     </Button>
                 </Form>

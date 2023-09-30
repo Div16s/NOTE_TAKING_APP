@@ -89,7 +89,7 @@ const CreateNote = () => {
                     </Form.Group>
                     
                     {loading && <Loading size={50} />}
-                    <Button type='submit' variant='primary'>
+                    <Button type='submit' className='btn btn-dark' variant='primary'>
                         Create Note
                     </Button>
                     <Button className='mx-2' onClick={resetHandler} variant='danger'>
@@ -107,3 +107,7 @@ const CreateNote = () => {
 }
 
 export default CreateNote
+
+
+
+

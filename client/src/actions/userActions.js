@@ -14,7 +14,7 @@ export const login = (email,password) => async (dispatch) => {
         };
 
         const {data} = await axios.post(
-            "http://localhost:8000/user/login",
+            "http://localhost:5000/user/login",
             {
                 email,
                 password,
@@ -53,7 +53,7 @@ export const register = (name,email,password,pic) => async (dispatch) => {
         };
 
         const {data} = await axios.post(
-            "http://localhost:8000/user",
+            "http://localhost:5000/user",
             {
                 name,
                 email,
@@ -93,7 +93,7 @@ export const updateProfile = (user) => async (dispatch,getState) => {
             },
         };
 
-        const {data} = await axios.post("http://localhost:8000/user/profile",user,config);
+        const {data} = await axios.post("http://localhost:5000/user/profile",user,config);
 
         dispatch({type:USER_UPDATE_SUCCESS,payload:data});
 
