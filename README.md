@@ -83,7 +83,7 @@ To run the Note Taking App locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
+   git clone [<repository-url>](https://github.com/Div16s/NOTE_TAKING_APP)
    
 2. Navigate to the project directory:
 
