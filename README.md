@@ -2,6 +2,10 @@
 
 Welcome to the Note Taking App, a full-stack MERN (MongoDB, Express.js, React.js, Node.js) application designed to help you organize and manage your notes seamlessly. This project incorporates Bootstrap CSS for styling, providing a clean and responsive user interface. Utilizing React Redux for state management and JWT tokens for user authentication & session management, the Note-Taking App offers a secure and feature-rich note-taking experience.
 
+## Deployment
+
+The Note Taking App is deployed and accessible online. You can visit the live application by following this [link](https://notesphere-flame.vercel.app/).
+
 ## Features
 
 ### 1. User Authentication
@@ -102,3 +106,6 @@ To run the Note Taking App locally, follow these steps:
 
    ```bash
    npm start
+
+
+**Feel free to contribute to the project by submitting bug reports, feature requests, or pull requests. Let's work together to make the Note-Taking App a powerful tool for efficient note organization.**
