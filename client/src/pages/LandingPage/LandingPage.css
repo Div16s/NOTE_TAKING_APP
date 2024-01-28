@@ -22,15 +22,21 @@
     color: rgb(186, 186, 185);
 }
 
-.description{
+.description {
     font-size: 20px;
     font-weight: 550;
     font-family: 'Courier New', Courier, monospace;
     color: aliceblue;
     width: 60%;
-    justify-content: center;
-    text-align: center;
-    margin-left: 225px;
+    text-align: center; /* Center text horizontally */
+    margin: 0 auto; /* Center the element horizontally */
+}
+
+/* Add a media query for small screens */
+@media (max-width: 768px) {
+    .description {
+        width: 90%; /* Adjust the width as needed for smaller screens */
+    }
 }
 
 .intro-text{

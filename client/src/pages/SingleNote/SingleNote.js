@@ -36,7 +36,7 @@ const SingleNote = () => {
 
     useEffect(() => {
         const fetching = async () => {
-            const { data } = await axios.get(`http://localhost:5000/notes/${id}`);
+            const { data } = await axios.get(`http://localhost:5000/${id}`);
             console.log(id);
             setTitle(data.title);
             setContent(data.content);
